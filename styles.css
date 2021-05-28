@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1, h2 {
+    color: rgb(185, 39, 23);
+    background-color: silver;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    font-weight: 1000;
+}
 
 .content {
     width: 1100px;
