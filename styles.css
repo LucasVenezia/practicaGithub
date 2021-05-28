@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-wrap {
+    margin: 10px;
+    -webkit-perspective:600;
+    perspective: 600;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+.tarjeta {
+    width: 450px;
+    height: 280px;
+    background-color: rgba(228, 207, 19, 0.71);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    box-shadow: 0px 10px 15px -5px rgba(9, 0, 0, 0.65);
+}
+.frente, .contrafrente {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.frente {
+    width: 100%;
+}
+.card1 {
+    background-image: url(images/camaro.jpg);
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url(images/vento.jpg);
+    background-size: cover;
+}
+.card3 {
+    background-image: url(images/captiva.jpg);
+    background-size: cover;
+}
+
+.contrafrente {
+    transform: rotateY(180deg);
+    
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    font-family: alfa slab one;
+    color: rgba(6, 17, 46, 0.979);
+}
+
